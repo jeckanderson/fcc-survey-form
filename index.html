@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Surfey Form Freecodecamp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">fcc survey form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-control">
+                <label id="name-label">Name:</label>
+                <input type="text" name="name" placeholder="insert your name" id="name" required>
+            </div>
+            <div class="form-control">
+                <label id="email-label">Email:</label>
+                <input type="email" name="email" placeholder="insert your email" id="email" required>
+            </div>
+            <div class="form-control">
+                <label id="number-label">Number:</label>
+                <input type="number" number="number" placeholder="insert your number" min="0" max="12" id="number" required>
+            </div>
+            <div class="form-control">
+                <label for="">Which option best describes your current role?</label>
+                <select id="dropdown" name="dropdown" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div>
+            <div class="form-control" id="radio">
+                <label class="form-promp">Gender:</label>
+                <label for="html"><input type="radio" id="html" name="fav_language" value="HTML">Male</label>
+                <label for="css"><input type="radio" id="css" name="fav_language" value="CSS">Female</label>
+            </div>
+            <div class="form-control" id="check-box">
+                <label for="">What would you like to see improved? (Check all that apply)</label>
+                <label for="vehicle1"><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> user interface</label>
+                <label for="vehicle2"><input type="checkbox" id="vehicle2" name="vehicle2" value="Car"> web performance</label>
+                <label for="vehicle3"><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"> services provided</label>
+            </div>
+            <div class="form-control">
+                <textarea name="textarea" id="textarea" cols="24" rows="5" placeholder="send your message..!" required></textarea>
+            </div>
+            <button class="button" type="submit" id="submit">Submit!</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
